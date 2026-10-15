@@ -2,18 +2,7 @@
 import flet as ft
 from services.cart_service import add_item
 from components.cart_sidebar import create_cart_sidebar
-
-MENU_DATA = [
-    {"id": "A01", "name": "無骨鹽酥雞", "price": 75, "category": "鹽酥雞類", "img": "🍗", "desc": "招牌必點，蒜香味十足，外酥內嫩"},
-    {"id": "A02", "name": "超大雞排", "price": 99, "category": "鹽酥雞類", "img": "🥩", "desc": "比臉還大的香酥雞排，鮮嫩多汁"},
-    {"id": "A03", "name": "甜不辣", "price": 45, "category": "鹽酥雞類", "img": "🍢", "desc": "炸至蓬鬆酥脆，一口接一口"},
-    {"id": "A04", "name": "魷魚", "price": 75, "category": "鹽酥雞類", "img": "🦑", "desc": "Q 彈有嚼勁，越嚼越香"},
-    {"id": "B01", "name": "雞屁股", "price": 40, "category": "串燒類", "img": "🍡", "desc": "香氣四溢，油而不膩"},
-    {"id": "C01", "name": "四季豆", "price": 50, "category": "蔬菜類", "img": "🥦", "desc": "清爽解膩，保留蔬菜甜味"},
-    {"id": "D01", "name": "芋頭餅 (3顆)", "price": 35, "category": "點心類", "img": "🍪", "desc": "外皮香酥，芋泥濃郁"},
-    {"id": "E01", "name": "可樂 (免費續杯)", "price": 30, "category": "飲料類", "img": "🥤", "desc": "冰涼清爽，解膩首選"},
-    {"id": "F01", "name": "雙人套餐", "price": 309, "category": "套餐類", "img": "🍱", "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"},
-]
+from services.menu_service import get_menu, get_categories  # 菜單資料改由組員 B 的服務提供（data/menu.json）
 
 def menu_view(page: ft.Page):
     """菜單主頁 View"""
@@ -95,13 +84,13 @@ def menu_view(page: ft.Page):
         nonlocal current_category
         current_category = category
         grid_view.controls.clear()
-        filtered = [i for i in MENU_DATA if category == "全部" or i["category"] == category]
+        filtered = get_menu(category)
         for item in filtered:
             grid_view.controls.append(create_food_card(item))
         render_category_row()
         page.update()
 
-    categories = ["全部", "鹽酥雞類", "串燒類", "蔬菜類", "點心類", "飲料類", "套餐類"]
+    categories = get_categories()  # 依 menu.json 自動產生，新增分類不用改這裡
     category_row = ft.Row(scroll=ft.ScrollMode.AUTO, spacing=8)
 
     def render_category_row():

@@ -1,0 +1,4428 @@
+[
+  {
+    "order_id": "ORD-20260915-1041",
+    "created_at": "2026-09-15 11:15:00",
+    "dining_type": "內用",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "4",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 110,
+    "discount": 0,
+    "total": 110
+  },
+  {
+    "order_id": "ORD-20260915-1016",
+    "created_at": "2026-09-15 12:45:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "8",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 339,
+    "discount": 30,
+    "total": 309
+  },
+  {
+    "order_id": "ORD-20260915-1095",
+    "created_at": "2026-09-15 15:34:00",
+    "dining_type": "外帶",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 254,
+    "discount": 0,
+    "total": 254
+  },
+  {
+    "order_id": "ORD-20260915-1083",
+    "created_at": "2026-09-15 22:09:00",
+    "dining_type": "外帶",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 160,
+    "discount": 0,
+    "total": 160
+  },
+  {
+    "order_id": "ORD-20260915-1063",
+    "created_at": "2026-09-15 22:34:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 3
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 488,
+    "discount": 30,
+    "total": 458
+  },
+  {
+    "order_id": "ORD-20260915-1011",
+    "created_at": "2026-09-15 22:56:00",
+    "dining_type": "外送",
+    "payment_method": "現金",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 115,
+    "discount": 0,
+    "total": 115
+  },
+  {
+    "order_id": "ORD-20260916-1070",
+    "created_at": "2026-09-16 13:50:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "9",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 180,
+    "discount": 0,
+    "total": 180
+  },
+  {
+    "order_id": "ORD-20260916-1092",
+    "created_at": "2026-09-16 15:50:00",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 200,
+    "discount": 0,
+    "total": 200
+  },
+  {
+    "order_id": "ORD-20260916-1067",
+    "created_at": "2026-09-16 20:47:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 444,
+    "discount": 30,
+    "total": 414
+  },
+  {
+    "order_id": "ORD-20260916-1020",
+    "created_at": "2026-09-16 21:34:00",
+    "dining_type": "外送",
+    "payment_method": "現金",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 30,
+    "discount": 0,
+    "total": 30
+  },
+  {
+    "order_id": "ORD-20260917-1009",
+    "created_at": "2026-09-17 11:55:00",
+    "dining_type": "外帶",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 3
+      },
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 474,
+    "discount": 30,
+    "total": 444
+  },
+  {
+    "order_id": "ORD-20260917-1068",
+    "created_at": "2026-09-17 13:00:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 150,
+    "discount": 0,
+    "total": 150
+  },
+  {
+    "order_id": "ORD-20260917-1001",
+    "created_at": "2026-09-17 14:14:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "5",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 254,
+    "discount": 0,
+    "total": 254
+  },
+  {
+    "order_id": "ORD-20260917-1085",
+    "created_at": "2026-09-17 14:40:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 374,
+    "discount": 30,
+    "total": 344
+  },
+  {
+    "order_id": "ORD-20260917-1054",
+    "created_at": "2026-09-17 20:44:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "7",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 75,
+    "discount": 0,
+    "total": 75
+  },
+  {
+    "order_id": "ORD-20260917-1087",
+    "created_at": "2026-09-17 20:55:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "1",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 70,
+    "discount": 0,
+    "total": 70
+  },
+  {
+    "order_id": "ORD-20260918-1026",
+    "created_at": "2026-09-18 12:34:00",
+    "dining_type": "外送",
+    "payment_method": "現金",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 145,
+    "discount": 0,
+    "total": 145
+  },
+  {
+    "order_id": "ORD-20260918-1028",
+    "created_at": "2026-09-18 12:47:00",
+    "dining_type": "內用",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "2",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 70,
+    "discount": 0,
+    "total": 70
+  },
+  {
+    "order_id": "ORD-20260918-1030",
+    "created_at": "2026-09-18 12:56:00",
+    "dining_type": "外送",
+    "payment_method": "現金",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 299,
+    "discount": 0,
+    "total": 299
+  },
+  {
+    "order_id": "ORD-20260918-1097",
+    "created_at": "2026-09-18 13:02:00",
+    "dining_type": "內用",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "6",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 120,
+    "discount": 0,
+    "total": 120
+  },
+  {
+    "order_id": "ORD-20260918-1003",
+    "created_at": "2026-09-18 16:54:00",
+    "dining_type": "外帶",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 329,
+    "discount": 30,
+    "total": 299
+  },
+  {
+    "order_id": "ORD-20260918-1033",
+    "created_at": "2026-09-18 17:55:00",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 230,
+    "discount": 0,
+    "total": 230
+  },
+  {
+    "order_id": "ORD-20260918-1036",
+    "created_at": "2026-09-18 17:57:00",
+    "dining_type": "內用",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "11",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 245,
+    "discount": 0,
+    "total": 245
+  },
+  {
+    "order_id": "ORD-20260919-1046",
+    "created_at": "2026-09-19 14:24:00",
+    "dining_type": "外送",
+    "payment_method": "現金",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 200,
+    "discount": 0,
+    "total": 200
+  },
+  {
+    "order_id": "ORD-20260919-1008",
+    "created_at": "2026-09-19 14:47:00",
+    "dining_type": "外帶",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 45,
+    "discount": 0,
+    "total": 45
+  },
+  {
+    "order_id": "ORD-20260919-1082",
+    "created_at": "2026-09-19 18:02:00",
+    "dining_type": "外帶",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 225,
+    "discount": 0,
+    "total": 225
+  },
+  {
+    "order_id": "ORD-20260919-1042",
+    "created_at": "2026-09-19 21:44:00",
+    "dining_type": "外帶",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 225,
+    "discount": 0,
+    "total": 225
+  },
+  {
+    "order_id": "ORD-20260921-1059",
+    "created_at": "2026-09-21 12:15:00",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 30,
+    "discount": 0,
+    "total": 30
+  },
+  {
+    "order_id": "ORD-20260921-1017",
+    "created_at": "2026-09-21 19:08:00",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 75,
+    "discount": 0,
+    "total": 75
+  },
+  {
+    "order_id": "ORD-20260922-1006",
+    "created_at": "2026-09-22 13:29:00",
+    "dining_type": "外送",
+    "payment_method": "現金",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 75,
+    "discount": 0,
+    "total": 75
+  },
+  {
+    "order_id": "ORD-20260922-1069",
+    "created_at": "2026-09-22 15:50:00",
+    "dining_type": "內用",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "2",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 45,
+    "discount": 0,
+    "total": 45
+  },
+  {
+    "order_id": "ORD-20260922-1013",
+    "created_at": "2026-09-22 20:05:00",
+    "dining_type": "外帶",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 230,
+    "discount": 0,
+    "total": 230
+  },
+  {
+    "order_id": "ORD-20260922-1024",
+    "created_at": "2026-09-22 20:38:00",
+    "dining_type": "外帶",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 309,
+    "discount": 30,
+    "total": 279
+  },
+  {
+    "order_id": "ORD-20260923-1099",
+    "created_at": "2026-09-23 11:44:00",
+    "dining_type": "外送",
+    "payment_method": "現金",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 698,
+    "discount": 30,
+    "total": 668
+  },
+  {
+    "order_id": "ORD-20260923-1057",
+    "created_at": "2026-09-23 16:54:00",
+    "dining_type": "外送",
+    "payment_method": "現金",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 190,
+    "discount": 0,
+    "total": 190
+  },
+  {
+    "order_id": "ORD-20260924-1086",
+    "created_at": "2026-09-24 11:02:00",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 279,
+    "discount": 0,
+    "total": 279
+  },
+  {
+    "order_id": "ORD-20260924-1060",
+    "created_at": "2026-09-24 14:25:00",
+    "dining_type": "內用",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "12",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 309,
+    "discount": 30,
+    "total": 279
+  },
+  {
+    "order_id": "ORD-20260924-1039",
+    "created_at": "2026-09-24 15:13:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "3",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 309,
+    "discount": 30,
+    "total": 279
+  },
+  {
+    "order_id": "ORD-20260924-1064",
+    "created_at": "2026-09-24 18:30:00",
+    "dining_type": "內用",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "2",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 254,
+    "discount": 0,
+    "total": 254
+  },
+  {
+    "order_id": "ORD-20260924-1077",
+    "created_at": "2026-09-24 19:00:00",
+    "dining_type": "外帶",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 129,
+    "discount": 0,
+    "total": 129
+  },
+  {
+    "order_id": "ORD-20260925-1025",
+    "created_at": "2026-09-25 14:16:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "10",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 75,
+    "discount": 0,
+    "total": 75
+  },
+  {
+    "order_id": "ORD-20260926-1031",
+    "created_at": "2026-09-26 11:57:00",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 45,
+    "discount": 0,
+    "total": 45
+  },
+  {
+    "order_id": "ORD-20260926-1015",
+    "created_at": "2026-09-26 18:57:00",
+    "dining_type": "外帶",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 254,
+    "discount": 0,
+    "total": 254
+  },
+  {
+    "order_id": "ORD-20260927-1090",
+    "created_at": "2026-09-27 15:00:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 160,
+    "discount": 0,
+    "total": 160
+  },
+  {
+    "order_id": "ORD-20260927-1007",
+    "created_at": "2026-09-27 15:04:00",
+    "dining_type": "外送",
+    "payment_method": "現金",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 2
+      }
+    ],
+    "subtotal": 135,
+    "discount": 0,
+    "total": 135
+  },
+  {
+    "order_id": "ORD-20260927-1005",
+    "created_at": "2026-09-27 15:29:00",
+    "dining_type": "外帶",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 144,
+    "discount": 0,
+    "total": 144
+  },
+  {
+    "order_id": "ORD-20260927-1047",
+    "created_at": "2026-09-27 20:44:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "12",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 140,
+    "discount": 0,
+    "total": 140
+  },
+  {
+    "order_id": "ORD-20260928-1056",
+    "created_at": "2026-09-28 13:46:00",
+    "dining_type": "外帶",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 35,
+    "discount": 0,
+    "total": 35
+  },
+  {
+    "order_id": "ORD-20260928-1050",
+    "created_at": "2026-09-28 13:55:00",
+    "dining_type": "內用",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "2",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 169,
+    "discount": 0,
+    "total": 169
+  },
+  {
+    "order_id": "ORD-20260928-1073",
+    "created_at": "2026-09-28 21:52:00",
+    "dining_type": "內用",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "12",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 129,
+    "discount": 0,
+    "total": 129
+  },
+  {
+    "order_id": "ORD-20260929-1043",
+    "created_at": "2026-09-29 11:35:00",
+    "dining_type": "外帶",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 185,
+    "discount": 0,
+    "total": 185
+  },
+  {
+    "order_id": "ORD-20260929-1089",
+    "created_at": "2026-09-29 15:12:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 165,
+    "discount": 0,
+    "total": 165
+  },
+  {
+    "order_id": "ORD-20260929-1061",
+    "created_at": "2026-09-29 15:19:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 2
+      }
+    ],
+    "subtotal": 599,
+    "discount": 30,
+    "total": 569
+  },
+  {
+    "order_id": "ORD-20260930-1096",
+    "created_at": "2026-09-30 11:39:00",
+    "dining_type": "外帶",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 379,
+    "discount": 30,
+    "total": 349
+  },
+  {
+    "order_id": "ORD-20260930-1051",
+    "created_at": "2026-09-30 11:47:00",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 384,
+    "discount": 30,
+    "total": 354
+  },
+  {
+    "order_id": "ORD-20260930-1022",
+    "created_at": "2026-09-30 13:12:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 105,
+    "discount": 0,
+    "total": 105
+  },
+  {
+    "order_id": "ORD-20260930-1074",
+    "created_at": "2026-09-30 15:42:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "1",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 99,
+    "discount": 0,
+    "total": 99
+  },
+  {
+    "order_id": "ORD-20260930-1062",
+    "created_at": "2026-09-30 15:46:00",
+    "dining_type": "內用",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "5",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 75,
+    "discount": 0,
+    "total": 75
+  },
+  {
+    "order_id": "ORD-20260930-1071",
+    "created_at": "2026-09-30 18:05:00",
+    "dining_type": "外帶",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 339,
+    "discount": 30,
+    "total": 309
+  },
+  {
+    "order_id": "ORD-20260930-1023",
+    "created_at": "2026-09-30 19:58:00",
+    "dining_type": "內用",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "10",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 2
+      }
+    ],
+    "subtotal": 423,
+    "discount": 30,
+    "total": 393
+  },
+  {
+    "order_id": "ORD-20260930-1078",
+    "created_at": "2026-09-30 22:18:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 80,
+    "discount": 0,
+    "total": 80
+  },
+  {
+    "order_id": "ORD-20261001-1079",
+    "created_at": "2026-10-01 22:56:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "5",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 349,
+    "discount": 30,
+    "total": 319
+  },
+  {
+    "order_id": "ORD-20261002-1010",
+    "created_at": "2026-10-02 11:43:00",
+    "dining_type": "內用",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "8",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 40,
+    "discount": 0,
+    "total": 40
+  },
+  {
+    "order_id": "ORD-20261002-1038",
+    "created_at": "2026-10-02 13:12:00",
+    "dining_type": "外帶",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 35,
+    "discount": 0,
+    "total": 35
+  },
+  {
+    "order_id": "ORD-20261002-1014",
+    "created_at": "2026-10-02 13:16:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "11",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 115,
+    "discount": 0,
+    "total": 115
+  },
+  {
+    "order_id": "ORD-20261002-1076",
+    "created_at": "2026-10-02 13:59:00",
+    "dining_type": "外帶",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 225,
+    "discount": 0,
+    "total": 225
+  },
+  {
+    "order_id": "ORD-20261003-1072",
+    "created_at": "2026-10-03 11:48:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 195,
+    "discount": 0,
+    "total": 195
+  },
+  {
+    "order_id": "ORD-20261003-1065",
+    "created_at": "2026-10-03 21:43:00",
+    "dining_type": "外帶",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 234,
+    "discount": 0,
+    "total": 234
+  },
+  {
+    "order_id": "ORD-20261004-1066",
+    "created_at": "2026-10-04 20:50:00",
+    "dining_type": "外帶",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 75,
+    "discount": 0,
+    "total": 75
+  },
+  {
+    "order_id": "ORD-20261004-1053",
+    "created_at": "2026-10-04 22:45:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "4",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 599,
+    "discount": 30,
+    "total": 569
+  },
+  {
+    "order_id": "ORD-20261005-1000",
+    "created_at": "2026-10-05 12:01:00",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 379,
+    "discount": 30,
+    "total": 349
+  },
+  {
+    "order_id": "ORD-20261005-1029",
+    "created_at": "2026-10-05 17:53:00",
+    "dining_type": "外帶",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 3
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 299,
+    "discount": 0,
+    "total": 299
+  },
+  {
+    "order_id": "ORD-20261006-1040",
+    "created_at": "2026-10-06 12:18:00",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 115,
+    "discount": 0,
+    "total": 115
+  },
+  {
+    "order_id": "ORD-20261006-1034",
+    "created_at": "2026-10-06 14:25:00",
+    "dining_type": "內用",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "2",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 414,
+    "discount": 30,
+    "total": 384
+  },
+  {
+    "order_id": "ORD-20261006-1055",
+    "created_at": "2026-10-06 16:04:00",
+    "dining_type": "外帶",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 30,
+    "discount": 0,
+    "total": 30
+  },
+  {
+    "order_id": "ORD-20261006-1018",
+    "created_at": "2026-10-06 17:22:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "6",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 75,
+    "discount": 0,
+    "total": 75
+  },
+  {
+    "order_id": "ORD-20261006-1075",
+    "created_at": "2026-10-06 19:29:00",
+    "dining_type": "外送",
+    "payment_method": "現金",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 129,
+    "discount": 0,
+    "total": 129
+  },
+  {
+    "order_id": "ORD-20261006-1098",
+    "created_at": "2026-10-06 22:44:00",
+    "dining_type": "外帶",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 30,
+    "discount": 0,
+    "total": 30
+  },
+  {
+    "order_id": "ORD-20261007-1081",
+    "created_at": "2026-10-07 14:36:00",
+    "dining_type": "外帶",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 35,
+    "discount": 0,
+    "total": 35
+  },
+  {
+    "order_id": "ORD-20261008-1048",
+    "created_at": "2026-10-08 19:51:00",
+    "dining_type": "外帶",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 499,
+    "discount": 30,
+    "total": 469
+  },
+  {
+    "order_id": "ORD-20261009-1012",
+    "created_at": "2026-10-09 13:34:00",
+    "dining_type": "內用",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "1",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 50,
+    "discount": 0,
+    "total": 50
+  },
+  {
+    "order_id": "ORD-20261009-1045",
+    "created_at": "2026-10-09 19:31:00",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 434,
+    "discount": 30,
+    "total": 404
+  },
+  {
+    "order_id": "ORD-20261010-1002",
+    "created_at": "2026-10-10 11:48:00",
+    "dining_type": "外送",
+    "payment_method": "現金",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 99,
+    "discount": 0,
+    "total": 99
+  },
+  {
+    "order_id": "ORD-20261010-1019",
+    "created_at": "2026-10-10 12:15:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "2",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 230,
+    "discount": 0,
+    "total": 230
+  },
+  {
+    "order_id": "ORD-20261010-1094",
+    "created_at": "2026-10-10 12:29:00",
+    "dining_type": "內用",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "7",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 438,
+    "discount": 30,
+    "total": 408
+  },
+  {
+    "order_id": "ORD-20261010-1032",
+    "created_at": "2026-10-10 13:56:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 244,
+    "discount": 0,
+    "total": 244
+  },
+  {
+    "order_id": "ORD-20261010-1091",
+    "created_at": "2026-10-10 16:14:00",
+    "dining_type": "外帶",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 99,
+    "discount": 0,
+    "total": 99
+  },
+  {
+    "order_id": "ORD-20261010-1093",
+    "created_at": "2026-10-10 19:56:00",
+    "dining_type": "外帶",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 40,
+    "discount": 0,
+    "total": 40
+  },
+  {
+    "order_id": "ORD-20261011-1052",
+    "created_at": "2026-10-11 11:39:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 324,
+    "discount": 30,
+    "total": 294
+  },
+  {
+    "order_id": "ORD-20261011-1049",
+    "created_at": "2026-10-11 18:58:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 230,
+    "discount": 0,
+    "total": 230
+  },
+  {
+    "order_id": "ORD-20261011-1027",
+    "created_at": "2026-10-11 19:45:00",
+    "dining_type": "外送",
+    "payment_method": "現金",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "B01",
+          "name": "雞屁股",
+          "price": 40,
+          "category": "串燒類",
+          "img": "🍡",
+          "desc": "香氣四溢，油而不膩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 244,
+    "discount": 0,
+    "total": 244
+  },
+  {
+    "order_id": "ORD-20261011-1080",
+    "created_at": "2026-10-11 20:37:00",
+    "dining_type": "內用",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "4",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 469,
+    "discount": 30,
+    "total": 439
+  },
+  {
+    "order_id": "ORD-20261011-1004",
+    "created_at": "2026-10-11 21:39:00",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "A02",
+          "name": "超大雞排",
+          "price": 99,
+          "category": "鹽酥雞類",
+          "img": "🥩",
+          "desc": "比臉還大的香酥雞排，鮮嫩多汁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 344,
+    "discount": 30,
+    "total": 314
+  },
+  {
+    "order_id": "ORD-20261012-1058",
+    "created_at": "2026-10-12 16:11:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 309,
+    "discount": 30,
+    "total": 279
+  },
+  {
+    "order_id": "ORD-20261012-1084",
+    "created_at": "2026-10-12 16:54:00",
+    "dining_type": "外送",
+    "payment_method": "信用卡",
+    "address": "台北市測試路 1 號",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 309,
+    "discount": 30,
+    "total": 279
+  },
+  {
+    "order_id": "ORD-20261013-1021",
+    "created_at": "2026-10-13 11:10:00",
+    "dining_type": "外帶",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "F01",
+          "name": "雙人套餐",
+          "price": 309,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含鹽酥雞, 魷魚, 甜不辣, 雞蛋豆腐, 四季豆, 馬鈴薯條"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 309,
+    "discount": 30,
+    "total": 279
+  },
+  {
+    "order_id": "ORD-20261013-1035",
+    "created_at": "2026-10-13 15:11:00",
+    "dining_type": "外帶",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 160,
+    "discount": 0,
+    "total": 160
+  },
+  {
+    "order_id": "ORD-20261013-1088",
+    "created_at": "2026-10-13 18:57:00",
+    "dining_type": "外帶",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 2
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "D01",
+          "name": "芋頭餅 (3顆)",
+          "price": 35,
+          "category": "點心類",
+          "img": "🍪",
+          "desc": "外皮香酥，芋泥濃郁"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 265,
+    "discount": 0,
+    "total": 265
+  },
+  {
+    "order_id": "ORD-20261013-1044",
+    "created_at": "2026-10-13 19:27:00",
+    "dining_type": "外帶",
+    "payment_method": "現金",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 75,
+    "discount": 0,
+    "total": 75
+  },
+  {
+    "order_id": "ORD-20261014-1037",
+    "created_at": "2026-10-14 16:39:00",
+    "dining_type": "內用",
+    "payment_method": "信用卡",
+    "address": "",
+    "table_no": "5",
+    "phone": "",
+    "note": "",
+    "items": [
+      {
+        "item": {
+          "id": "A01",
+          "name": "無骨鹽酥雞",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "招牌必點，蒜香味十足，外酥內嫩"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "E01",
+          "name": "可樂 (免費續杯)",
+          "price": 30,
+          "category": "飲料類",
+          "img": "🥤",
+          "desc": "冰涼清爽，解膩首選"
+        },
+        "qty": 1
+      },
+      {
+        "item": {
+          "id": "C01",
+          "name": "四季豆",
+          "price": 50,
+          "category": "蔬菜類",
+          "img": "🥦",
+          "desc": "清爽解膩，保留蔬菜甜味"
+        },
+        "qty": 1
+      }
+    ],
+    "subtotal": 155,
+    "discount": 0,
+    "total": 155
+  }
+]
