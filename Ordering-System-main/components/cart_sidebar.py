@@ -1,7 +1,15 @@
 # components/cart_sidebar.py
+import threading
 import flet as ft
 from services.cart_service import get_cart, update_qty, remove_item
 from services.pricing import calc_price
+from pathlib import Path
+
+ASSETS_DIR = Path(__file__).resolve().parent.parent / "assets"
+
+# 調味選項（要改選項只改這裡）
+SPICE_LEVELS = ["不辣", "小辣", "中辣", "大辣"]
+TOPPINGS = ["蒜頭", "九層塔", "蔥"]
 
 # 全域訂單詳細資訊 (供 views/receipt_view.py 讀取)
 order_details = {
@@ -10,16 +18,69 @@ order_details = {
     "address": "",
     "table_no": "",
     "phone": "",
-    "note": ""
+    "note": "",          # 給人看的完整備註文字，例如「中辣、加蒜頭、加九層塔；其他：多一點胡椒」
+    "seasoning": {       # 結構化的調味選擇，存進訂單方便之後統計
+        "spice": "不辣",
+        "toppings": [],
+        "other": "",
+    },
 }
 
-def create_cart_sidebar(page: ft.Page):
+
+def build_note_text(spice, toppings, other):
+    """把勾選結果組成一行備註文字"""
+    parts = [spice] + [f"加{t}" for t in toppings]
+    text = "、".join(parts)
+    if other:
+        text += f"；其他：{other}"
+    return text
+
+
+def _thumb(item):
+    """購物車縮圖：有照片用照片，沒有就用 emoji"""
+    photo = item.get("photo") if isinstance(item, dict) else None
+    if photo and (ASSETS_DIR / photo).exists():
+        return ft.Container(
+            content=ft.Image(src=photo, width=40, height=40, fit=ft.ImageFit.COVER),
+            width=40, height=40, border_radius=6, clip_behavior=ft.ClipBehavior.ANTI_ALIAS,
+        )
+    img = item.get("img", "🍗") if isinstance(item, dict) else getattr(item, "img", "🍗")
+    return ft.Container(
+        content=ft.Text(img, size=24),
+        width=40, height=40, bgcolor="#FEF5ED", border_radius=6, alignment=ft.alignment.center,
+    )
+
+def create_cart_sidebar(page: ft.Page, on_change=None):
+    """on_change：購物車在側邊欄被修改後要通知的函式（例如更新菜單卡片上的數量）"""
     """Foodpanda 款式右側購物車 (包含訂單資料收集 Modal)"""
     
     cart_items_column = ft.Column(scroll=ft.ScrollMode.AUTO, expand=True)
     pricing_text = ft.Text(size=13, color="#555555")
     discount_hint_text = ft.Text(size=12, color="#D35400", weight="bold")
     total_price_text = ft.Text("NT$0", size=20, weight="bold", color="#D35400")
+
+    # 購物車數量徽章：數量增加時會「彈一下」
+    badge_text = ft.Text("0", size=12, weight="bold", color="white")
+    count_badge = ft.Container(
+        content=badge_text,
+        bgcolor="#D35400",
+        border_radius=12,
+        padding=ft.padding.symmetric(horizontal=8, vertical=2),
+        visible=False,
+        scale=1,
+        animate_scale=ft.Animation(150, ft.AnimationCurve.EASE_OUT),
+    )
+    last_count = {"value": 0}
+
+    def bump_badge():
+        """把徽章放大再縮回，做出彈跳效果"""
+        count_badge.scale = 1.4
+        page.update()
+        threading.Timer(0.15, _shrink_badge).start()
+
+    def _shrink_badge():
+        count_badge.scale = 1
+        page.update()
 
     def on_dining_change(e):
         val = list(e.data)[0] if isinstance(e.data, (set, list)) else e.data
@@ -78,7 +139,8 @@ def create_cart_sidebar(page: ft.Page):
                 item_id = item.get("id") if isinstance(item, dict) else item.id
                 item_name = item.get("name") if isinstance(item, dict) else item.name
                 item_price = item.get("price", 0) if isinstance(item, dict) else item.price
-                item_img = item.get("img", "🍗") if isinstance(item, dict) else getattr(item, "img", "🍗")
+                note = entry.get("note", "")
+                line_key = entry.get("key", item_id)  # 同品項不同備註是不同行，加減要用 key
 
                 minus_icon_name = "delete_outline" if qty == 1 else "remove"
                 minus_icon_color = "red600" if qty == 1 else "#D35400"
@@ -86,12 +148,10 @@ def create_cart_sidebar(page: ft.Page):
                 cart_items_column.controls.append(
                     ft.Container(
                         content=ft.Row([
-                            ft.Container(
-                                content=ft.Text(item_img, size=24),
-                                width=40, height=40, bgcolor="#FEF5ED", border_radius=6, alignment=ft.alignment.center
-                            ),
+                            _thumb(item),
                             ft.Column([
                                 ft.Text(item_name, size=14, weight="bold", color="#222222", no_wrap=True),
+                                *([ft.Text(f"備註：{note}", size=11, color="#888888", no_wrap=True)] if note else []),
                                 ft.Text(f"NT${item_price}", size=12, color="#666666"),
                             ], expand=True, spacing=2),
                             ft.Container(
@@ -100,14 +160,14 @@ def create_cart_sidebar(page: ft.Page):
                                         icon=minus_icon_name,
                                         icon_color=minus_icon_color,
                                         icon_size=18,
-                                        on_click=lambda e, i_id=item_id, q=qty: change_qty(i_id, q - 1)
+                                        on_click=lambda e, k=line_key, q=qty: change_qty(k, q - 1)
                                     ),
                                     ft.Text(str(qty), size=14, weight="bold", color="#222222"),
                                     ft.IconButton(
                                         icon="add",
                                         icon_color="#D35400",
                                         icon_size=18,
-                                        on_click=lambda e, i_id=item_id, q=qty: change_qty(i_id, q + 1)
+                                        on_click=lambda e, k=line_key, q=qty: change_qty(k, q + 1)
                                     ),
                                 ], spacing=0, alignment="center"),
                                 border=ft.border.all(1, "#E0E0E0"),
@@ -132,14 +192,24 @@ def create_cart_sidebar(page: ft.Page):
 
             total_price_text.value = f"NT${pricing['total']}"
 
-        page.update()
+        count = sum(entry.get("qty", 1) for entry in cart)
+        badge_text.value = str(count)
+        count_badge.visible = count > 0
+        increased = count > last_count["value"]
+        last_count["value"] = count
 
-    def change_qty(item_id, new_qty):
+        page.update()
+        if increased:
+            bump_badge()
+
+    def change_qty(line_key, new_qty):
         if new_qty <= 0:
-            remove_item(item_id)
+            remove_item(line_key)
         else:
-            update_qty(item_id, new_qty)
+            update_qty(line_key, new_qty)
         refresh()
+        if on_change:
+            on_change()
 
     def open_checkout_dialog(e):
         if not get_cart():
@@ -174,21 +244,55 @@ def create_cart_sidebar(page: ft.Page):
             border_color="#D35400", 
             color="#222222"
         )
-        note_input = ft.TextField(
-            label="餐點備註", 
-            hint_text="例: 加蒜/中辣/不要香菜", 
-            border_color="#D35400", 
-            color="#222222"
+        # 調味選單：辣度單選、配料複選，預設帶入上次的選擇
+        label_style = ft.TextStyle(color="#222222", size=13)
+        prev = order_details.get("seasoning", {})
+
+        spice_group = ft.RadioGroup(
+            value=prev.get("spice", SPICE_LEVELS[0]),
+            content=ft.Row(
+                [ft.Radio(value=s, label=s, label_style=label_style, active_color="#D35400",
+                          visual_density=ft.VisualDensity.COMPACT) for s in SPICE_LEVELS],
+                spacing=0,
+            ),
+        )
+        topping_boxes = [
+            ft.Checkbox(label=f"加{t}", value=(t in prev.get("toppings", [])),
+                        label_style=label_style, active_color="#D35400", data=t,
+                        visual_density=ft.VisualDensity.COMPACT)
+            for t in TOPPINGS
+        ]
+        other_input = ft.TextField(
+            label="其他備註（選填）",
+            hint_text="例: 多一點胡椒、分開裝",
+            value=prev.get("other", ""),
+            border_color="#D35400",
+            color="#222222",
+            max_length=40,
+        )
+
+        seasoning_section = ft.Container(
+            content=ft.Column([
+                ft.Text("🌶️ 調味", size=14, weight="bold", color="#222222"),
+                ft.Text("辣度", size=12, color="#666666"),
+                spice_group,
+                ft.Text("配料", size=12, color="#666666"),
+                ft.Row(topping_boxes, spacing=0),
+                other_input,
+            ], spacing=4, tight=True),
+            bgcolor="#FEF5ED",
+            border_radius=8,
+            padding=10,
         )
 
         # 3. 根據純字串精準切換內用、外送與外帶欄位
         fields = []
         if dtype == "外送":
-            fields.extend([address_input, phone_input, note_input])
+            fields.extend([address_input, phone_input, seasoning_section])
         elif dtype == "內用":
-            fields.extend([table_input, note_input])  # 內用只出現桌號與備註！
+            fields.extend([table_input, seasoning_section])  # 內用只出現桌號與調味！
         else:  # 外帶自取
-            fields.extend([phone_input, note_input])
+            fields.extend([phone_input, seasoning_section])
 
         def confirm_and_pay(e):
             if dtype == "外送" and not address_input.value:
@@ -203,15 +307,20 @@ def create_cart_sidebar(page: ft.Page):
             order_details["address"] = address_input.value if address_input.value else ""
             order_details["table_no"] = table_input.value if table_input.value else ""
             order_details["phone"] = phone_input.value if phone_input.value else ""
-            order_details["note"] = note_input.value if note_input.value else ""
-            
+            spice = spice_group.value or SPICE_LEVELS[0]
+            toppings = [cb.data for cb in topping_boxes if cb.value]
+            other = (other_input.value or "").strip()
+            order_details["seasoning"] = {"spice": spice, "toppings": toppings, "other": other}
+            order_details["note"] = build_note_text(spice, toppings, other)
+
             page.close(checkout_dialog)
             page.go("/receipt")
 
         checkout_dialog = ft.AlertDialog(
             title=ft.Text(f"📋 請填寫訂單資訊 ({dtype})", size=18, weight="bold", color="#222222"),
             content=ft.Container(
-                content=ft.Column(fields, tight=True, spacing=10),
+                # scroll：螢幕太矮時視窗內容可捲動，不會被按鈕蓋住
+                content=ft.Column(fields, tight=True, spacing=10, scroll=ft.ScrollMode.AUTO),
                 width=340
             ),
             actions=[
@@ -227,7 +336,10 @@ def create_cart_sidebar(page: ft.Page):
 
     sidebar_container = ft.Container(
         content=ft.Column([
-            ft.Text("🛒 你的購物車", size=18, weight="bold", color="#222222"),
+            ft.Row([
+                ft.Text("🛒 你的購物車", size=18, weight="bold", color="#222222"),
+                count_badge,
+            ], spacing=8),
             dining_segmented,
             ft.Divider(height=1, color="#E0E0E0"),
             cart_items_column,

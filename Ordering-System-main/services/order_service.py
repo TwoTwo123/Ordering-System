@@ -45,3 +45,16 @@ def get_order(order_id):
         if order.get("order_id") == order_id:
             return order
     return None
+
+
+def get_best_sellers(n=3):
+    """依歷史訂單統計賣出數量最多的前 n 個品項編號（熱銷標籤用）"""
+    counts = {}
+    for order in _read_all():
+        for entry in order.get("items", []):
+            item = entry.get("item", {})
+            item_id = item.get("id") if isinstance(item, dict) else None
+            if item_id:
+                counts[item_id] = counts.get(item_id, 0) + entry.get("qty", 1)
+    ranked = sorted(counts, key=lambda i: counts[i], reverse=True)
+    return ranked[:n]

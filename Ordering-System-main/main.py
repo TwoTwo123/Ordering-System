@@ -44,4 +44,4 @@ def main(page: ft.Page):
     route_change(None)
 
 if __name__ == "__main__":
-    ft.app(target=main)
+    ft.app(target=main, assets_dir="assets")  # assets_dir：讓 Flet 找得到 assets/images/ 裡的食物照片

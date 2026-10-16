@@ -42,6 +42,7 @@ def receipt_view(page: ft.Page):
         "table_no": table_val,
         "phone": phone_val,
         "note": note_val,
+        "seasoning": order_details.get("seasoning", {}),  # 辣度與配料的勾選結果
         "items": cart_items,
         "subtotal": pricing["subtotal"],
         "discount": pricing["discount"],
@@ -59,9 +60,13 @@ def receipt_view(page: ft.Page):
         name = item.get("name") if isinstance(item, dict) else item.name
         price = item.get("price", 0) if isinstance(item, dict) else item.price
         
+        note = entry.get("note", "")
         items_detail.controls.append(
             ft.Row([
-                ft.Text(f"{name} x{qty}", size=14, color="#222222", expand=True),
+                ft.Column([
+                    ft.Text(f"{name} x{qty}", size=14, color="#222222"),
+                    *([ft.Text(f"備註：{note}", size=12, color="#888888")] if note else []),
+                ], spacing=2, expand=True),
                 ft.Text(f"NT${price * qty}", size=14, weight="bold", color="#222222")
             ])
         )
@@ -76,7 +81,7 @@ def receipt_view(page: ft.Page):
     if phone_val:
         extra_info_rows.append(ft.Row([ft.Text("聯絡電話：", weight="bold", color="#333333"), ft.Text(phone_val, color="#555555")]))
     if note_val:
-        extra_info_rows.append(ft.Row([ft.Text("餐點備註：", weight="bold", color="#333333"), ft.Text(note_val, color="#555555")]))
+        extra_info_rows.append(ft.Row([ft.Text("調味備註：", weight="bold", color="#333333"), ft.Text(note_val, color="#555555", expand=True)]))
 
     def finish_order(e):
         clear_cart() # 結帳完清空購物車

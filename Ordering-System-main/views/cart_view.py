@@ -28,19 +28,26 @@ def cart_view(page: ft.Page):
                 item_id = item.get("id") if isinstance(item, dict) else item.id
                 item_name = item.get("name") if isinstance(item, dict) else item.name
                 item_price = item.get("price", 0) if isinstance(item, dict) else item.price
+                note = entry.get("note", "")
+                line_key = entry.get("key", item_id)  # 同品項不同備註是不同行，用 key 區分
+
+                name_block = ft.Column([
+                    ft.Text(item_name, size=15, weight="bold"),
+                    *([ft.Text(f"備註：{note}", size=12, color="grey600")] if note else []),
+                ], spacing=2, expand=True)
 
                 items_list.controls.append(
                     ft.Container(
                         content=ft.Row([
-                            ft.Text(item_name, expand=True, size=15, weight="bold"),
+                            name_block,
                             ft.IconButton(
-                                "remove", 
-                                on_click=lambda e, i_id=item_id, q=qty: on_qty_change(i_id, q - 1)
+                                "remove",
+                                on_click=lambda e, k=line_key, q=qty: on_qty_change(k, q - 1)
                             ),
                             ft.Text(str(qty), size=15, weight="bold"),
                             ft.IconButton(
-                                "add", 
-                                on_click=lambda e, i_id=item_id, q=qty: on_qty_change(i_id, q + 1)
+                                "add",
+                                on_click=lambda e, k=line_key, q=qty: on_qty_change(k, q + 1)
                             ),
                             ft.Text(f"${item_price * qty}", width=60, text_align="right", color="red700", weight="bold"),
                         ]),
