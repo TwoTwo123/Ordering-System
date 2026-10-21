@@ -1,9 +1,20 @@
-# 計價邏輯實作前先回傳固定格式的字典，這樣結帳頁面可以先排版。
+# services/pricing.py
+
 def calc_price(cart_items):
     """計算小計、折扣、總額"""
-    print("系統：正在計算購物車總額...")
+    subtotal = 0
+    for entry in cart_items:
+        item = entry.get("item", entry)
+        qty = entry.get("qty", 1)
+        price = item.get("price", 0) if isinstance(item, dict) else getattr(item, "price", 0)
+        subtotal += price * qty
+    
+    # 滿 300 折 30 折扣邏輯
+    discount = 30 if subtotal >= 300 else 0
+    total = max(0, subtotal - discount)
+    
     return {
-        "subtotal": 100,  # 小計
-        "discount": 0,    # 折扣
-        "total": 100      # 最終總額
+        "subtotal": subtotal,
+        "discount": discount,
+        "total": total
     }
