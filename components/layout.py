@@ -6,7 +6,12 @@ def get_appbar(title_text: str):
     return ft.AppBar(
         title=ft.Text(title_text),
         center_title=True,
+<<<<<<< HEAD
         bgcolor=ft.colors.SURFACE_VARIANT, # 用一點淺灰色或主題色襯底區分
+=======
+        # bgcolor=ft.colors.SURFACE_VARIANT, # 用一點淺灰色或主題色襯底區分
+        bgcolor=ft.Colors.ON_SURFACE_VARIANT
+>>>>>>> b30500a (完成推薦功能並修復歷史訂單頁面)
     )
 
 def get_navbar(page: ft.Page, current_index: int = 0):
@@ -30,8 +35,14 @@ def get_navbar(page: ft.Page, current_index: int = 0):
         on_change=on_nav_change,
         destinations=[
             # 可以換圖示
+<<<<<<< HEAD
             ft.NavigationDestination(icon=ft.icons.RESTAURANT_MENU, label="菜單"),
             ft.NavigationDestination(icon=ft.icons.SHOPPING_CART, label="購物車"),
             ft.NavigationDestination(icon=ft.icons.RECEIPT_LONG, label="歷史"),
+=======
+            ft.NavigationBarDestination(icon=ft.Icons.RESTAURANT_MENU, label="菜單"),
+            ft.NavigationBarDestination(icon=ft.Icons.SHOPPING_CART, label="購物車"),
+            ft.NavigationBarDestination(icon=ft.Icons.RECEIPT_LONG, label="歷史"),
+>>>>>>> b30500a (完成推薦功能並修復歷史訂單頁面)
         ]
     )

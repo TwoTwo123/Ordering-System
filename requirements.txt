@@ -1,1 +1,3 @@
-flet
+"flet==0.28.3"
+"mlxtend==0.25.0"
+"pandas==3.0.6"
