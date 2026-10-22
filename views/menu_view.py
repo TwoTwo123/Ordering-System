@@ -1,25 +1,12 @@
-<<<<<<< HEAD
-# 菜單與搜尋頁
-import flet as ft
-from components.layout import get_appbar, get_navbar
-
-def menu_view(page: ft.Page):
-    return ft.View(
-        route="/",
-        appbar=get_appbar("菜單與搜尋"),
-        controls=[
-            ft.Text("這裡是菜單頁", size=24),
-            # 在這裡新增商品列表與搜尋框
-        ],
-        navigation_bar=get_navbar(page, current_index=0)
-=======
 # views/menu_view.py
 import flet as ft
 from services.cart_service import add_item, update_qty, remove_item, get_cart
 from components.cart_sidebar import create_cart_sidebar
-from services.menu_service import get_menu, get_categories, search_menu  # 菜單資料改由組員 B 的服務提供（data/menu.json）
+from services.menu_service import get_menu, get_categories, search_menu
 from pathlib import Path
 from services.order_service import get_best_sellers
+from components.layout import get_appbar
+
 
 # 照片放在 assets/images/，menu.json 的 "photo" 欄位寫相對於 assets 的路徑（例如 "images/A01.jpg"）
 ASSETS_DIR = Path(__file__).resolve().parent.parent / "assets"
@@ -55,7 +42,7 @@ def menu_view(page: ft.Page):
         page.update()
 
     # 側邊購物車按加減時，也要同步更新卡片上的數量
-    cart_sidebar_ui, refresh_cart = create_cart_sidebar(page, on_change=refresh_all_steppers)
+    cart_sidebar_ui, refresh_cart = create_cart_sidebar(page, on_cart_change_callback=refresh_all_steppers)
 
     def card_qty(item_id):
         """卡片上的數量 = 購物車中「沒有備註」那一行的數量（有備註的請到購物車調整）"""
@@ -207,7 +194,7 @@ def menu_view(page: ft.Page):
             )
         )
 
-    grid_view = ft.GridView(expand=True, max_extent=180, child_aspect_ratio=0.72, spacing=12, run_spacing=12, padding=10)
+    grid_view = ft.GridView(expand=True, max_extent=180, child_aspect_ratio=0.88, spacing=12, run_spacing=12, padding=12)
 
     def refresh_grid(category):
         nonlocal current_category
@@ -272,12 +259,17 @@ def menu_view(page: ft.Page):
 
     return ft.View(
         "/",
+        appbar=get_appbar("台灣鹽酥雞 (Foodpanda 合作店家)", page),
         controls=[
-            ft.AppBar(title=ft.Text("🐼 台灣鹽酥雞 (Foodpanda 合作店家)", size=20, weight="bold", color="white"), bgcolor="#D35400"),
-            ft.Row([
-                left_menu_panel,
-                cart_sidebar_ui
-            ], expand=True, spacing=0)
-        ]
->>>>>>> b30500a (完成推薦功能並修復歷史訂單頁面)
+            ft.Container(
+                content=ft.Row([
+                    left_menu_panel,
+                    cart_sidebar_ui
+                ], expand=True, spacing=15),  # 菜單與購物車之間拉開 15px 間距
+                padding=ft.padding.symmetric(horizontal=20, vertical=15),  # 網頁整體四周留白 20px
+                expand=True
+            )
+        ],
+        padding=0,
+        spacing=0
     )

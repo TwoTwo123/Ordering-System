@@ -1,48 +1,68 @@
-# 這個檔案用來產出畫面上方的「標題列」和最下方的「導覽列」
+# components/layout.py
 import flet as ft
 
-def get_appbar(title_text: str):
-    """回傳每個頁面上方的標題列"""
-    return ft.AppBar(
-        title=ft.Text(title_text),
-        center_title=True,
-<<<<<<< HEAD
-        bgcolor=ft.colors.SURFACE_VARIANT, # 用一點淺灰色或主題色襯底區分
-=======
-        # bgcolor=ft.colors.SURFACE_VARIANT, # 用一點淺灰色或主題色襯底區分
-        bgcolor=ft.Colors.ON_SURFACE_VARIANT
->>>>>>> b30500a (完成推薦功能並修復歷史訂單頁面)
+def get_appbar(title_text: str, page: ft.Page, show_back: bool = False):
+    """
+    頂部 Header：
+    - 右上角：白色圓形大頭貼與下拉選單
+    - 左上角：可選返回箭頭 (返回點餐主頁)
+    """
+    def on_select(e):
+        if e.control.data == "history":
+            page.go("/history")
+        elif e.control.data == "menu":
+            page.go("/")
+
+    user_avatar_menu = ft.PopupMenuButton(
+        content=ft.Container(
+            content=ft.Icon(ft.Icons.PERSON, color="#D35400", size=20),
+            bgcolor="white",
+            shape=ft.BoxShape.CIRCLE,
+            width=36,
+            height=36,
+            alignment=ft.alignment.center,
+            shadow=ft.BoxShadow(blur_radius=4, color=ft.Colors.BLACK12)
+        ),
+        items=[
+            ft.PopupMenuItem(
+                content=ft.Row([
+                    ft.Icon(ft.Icons.RESTAURANT_MENU, size=18, color="#333333"),
+                    ft.Text("菜單點餐", size=14, color="#333333")
+                ], spacing=10),
+                data="menu",
+                on_click=on_select
+            ),
+            ft.PopupMenuItem(
+                content=ft.Row([
+                    ft.Icon(ft.Icons.RECEIPT_LONG, size=18, color="#333333"),
+                    ft.Text("購買紀錄", size=14, color="#333333")
+                ], spacing=10),
+                data="history",
+                on_click=on_select
+            ),
+        ],
+        tooltip="個人選單"
     )
 
-def get_navbar(page: ft.Page, current_index: int = 0):
-    """
-    回傳底部的導覽列。
-    current_index 控制目前哪一個按鈕要亮起 (0=菜單, 1=購物車, 2=歷史)
-    """
-    
-    def on_nav_change(e):
-        # 當使用者點擊導覽列按鈕時，根據選中的順序決定要切換到哪個路由
-        selected = e.control.selected_index
-        if selected == 0:
-            page.go("/")          # 切換到菜單頁
-        elif selected == 1:
-            page.go("/cart")      # 切換到購物車頁
-        elif selected == 2:
-            page.go("/history")   # 切換到歷史紀錄頁
+    leading_button = ft.IconButton(
+        icon=ft.Icons.ARROW_BACK,
+        icon_color="white",
+        on_click=lambda e: page.go("/")
+    ) if show_back else None
 
-    return ft.NavigationBar(
-        selected_index=current_index,
-        on_change=on_nav_change,
-        destinations=[
-            # 可以換圖示
-<<<<<<< HEAD
-            ft.NavigationDestination(icon=ft.icons.RESTAURANT_MENU, label="菜單"),
-            ft.NavigationDestination(icon=ft.icons.SHOPPING_CART, label="購物車"),
-            ft.NavigationDestination(icon=ft.icons.RECEIPT_LONG, label="歷史"),
-=======
-            ft.NavigationBarDestination(icon=ft.Icons.RESTAURANT_MENU, label="菜單"),
-            ft.NavigationBarDestination(icon=ft.Icons.SHOPPING_CART, label="購物車"),
-            ft.NavigationBarDestination(icon=ft.Icons.RECEIPT_LONG, label="歷史"),
->>>>>>> b30500a (完成推薦功能並修復歷史訂單頁面)
+    return ft.AppBar(
+        title=ft.Text(title_text, weight="bold", color="white", size=20),
+        bgcolor="#D35400",
+        center_title=False,
+        leading=leading_button,
+        actions=[
+            ft.Container(
+                content=user_avatar_menu,
+                padding=ft.padding.only(right=20)
+            )
         ]
     )
+
+get_header = get_appbar
+get_navbar = lambda page, current_index=0: None
+get_bottom_navbar = get_navbar

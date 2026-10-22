@@ -6721,5 +6721,256 @@
     "subtotal": 219,
     "discount": 0,
     "total": 219
+  },
+  {
+    "order_id": "ORD-20261022-9604",
+    "created_at": "2026-10-22 10:50:17",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "seasoning": {
+      "spice": "不辣",
+      "toppings": [],
+      "other": ""
+    },
+    "items": [],
+    "subtotal": 0,
+    "discount": 0,
+    "total": 0
+  },
+  {
+    "order_id": "ORD-20261022-5768",
+    "created_at": "2026-10-22 11:03:23",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "",
+    "seasoning": {
+      "spice": "不辣",
+      "toppings": [],
+      "other": ""
+    },
+    "items": [],
+    "subtotal": 0,
+    "discount": 0,
+    "total": 0
+  },
+  {
+    "order_id": "ORD-20261022-3165",
+    "created_at": "2026-10-22 11:04:01",
+    "dining_type": "外送",
+    "payment_method": "現場現金付款",
+    "address": "5613",
+    "table_no": "",
+    "phone": "846",
+    "note": "不辣、加蔥",
+    "seasoning": {
+      "spice": "不辣",
+      "toppings": [
+        "蔥"
+      ],
+      "other": ""
+    },
+    "items": [
+      {
+        "item": {
+          "id": "F02",
+          "name": "單人套餐",
+          "price": 149,
+          "category": "套餐類",
+          "img": "🍱",
+          "desc": "含無骨鹽酥雞, 甜不辣, 四季豆, 古早味紅茶",
+          "photo": "images/F02.jpg"
+        },
+        "qty": 1,
+        "note": "",
+        "key": "F02"
+      }
+    ],
+    "subtotal": 149,
+    "discount": 0,
+    "total": 149
+  },
+  {
+    "order_id": "ORD-20261022-5359",
+    "created_at": "2026-10-22 11:09:01",
+    "dining_type": "[\"內用\"]",
+    "payment_method": "現場現金付款",
+    "address": "",
+    "table_no": "",
+    "phone": "",
+    "note": "大辣",
+    "carrier": "",
+    "seasoning": {
+      "spice": "大辣",
+      "toppings": [],
+      "other": ""
+    },
+    "items": [
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香",
+          "photo": "images/A04.jpg"
+        },
+        "qty": 3,
+        "note": "",
+        "key": "A04"
+      },
+      {
+        "item": {
+          "id": "A05",
+          "name": "雞皮",
+          "price": 40,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "炸到金黃酥脆，香氣逼人",
+          "photo": "images/A05.jpg"
+        },
+        "qty": 1,
+        "note": "",
+        "key": "A05"
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口",
+          "photo": "images/A03.jpg"
+        },
+        "qty": 1,
+        "note": "",
+        "key": "A03"
+      }
+    ],
+    "subtotal": 310,
+    "discount": 30,
+    "total": 280
+  },
+  {
+    "order_id": "ORD-20261022-8882",
+    "created_at": "2026-10-22 11:11:52",
+    "dining_type": "外送",
+    "payment_method": "信用卡 / 簽帳卡",
+    "address": "56523",
+    "table_no": "",
+    "phone": "",
+    "note": "中辣",
+    "carrier": "",
+    "seasoning": {
+      "spice": "中辣",
+      "toppings": [],
+      "other": ""
+    },
+    "items": [
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香",
+          "photo": "images/A04.jpg"
+        },
+        "qty": 1,
+        "note": "",
+        "key": "A04"
+      },
+      {
+        "item": {
+          "id": "A03",
+          "name": "甜不辣",
+          "price": 45,
+          "category": "鹽酥雞類",
+          "img": "🍢",
+          "desc": "炸至蓬鬆酥脆，一口接一口",
+          "photo": "images/A03.jpg"
+        },
+        "qty": 2,
+        "note": "",
+        "key": "A03"
+      },
+      {
+        "item": {
+          "id": "E03",
+          "name": "冬瓜茶",
+          "price": 25,
+          "category": "飲料類",
+          "img": "🍵",
+          "desc": "甘甜退火，清涼消暑",
+          "photo": "images/E03.jpg"
+        },
+        "qty": 1,
+        "note": "",
+        "key": "E03"
+      }
+    ],
+    "subtotal": 190,
+    "discount": 0,
+    "total": 190
+  },
+  {
+    "order_id": "ORD-20261022-5533",
+    "created_at": "2026-10-22 15:05:42",
+    "dining_type": "外送",
+    "payment_method": "LINE Pay",
+    "address": "695",
+    "table_no": "",
+    "phone": "",
+    "note": "不辣 加蔥",
+    "carrier": "",
+    "seasoning": {
+      "spice": "不辣",
+      "toppings": [
+        "蔥"
+      ],
+      "other": ""
+    },
+    "items": [
+      {
+        "item": {
+          "id": "A05",
+          "name": "雞皮",
+          "price": 40,
+          "category": "鹽酥雞類",
+          "img": "🍗",
+          "desc": "炸到金黃酥脆，香氣逼人",
+          "photo": "images/A05.jpg"
+        },
+        "qty": 1,
+        "note": "",
+        "key": "A05"
+      },
+      {
+        "item": {
+          "id": "A04",
+          "name": "魷魚",
+          "price": 75,
+          "category": "鹽酥雞類",
+          "img": "🦑",
+          "desc": "Q 彈有嚼勁，越嚼越香",
+          "photo": "images/A04.jpg"
+        },
+        "qty": 1,
+        "note": "",
+        "key": "A04"
+      }
+    ],
+    "subtotal": 115,
+    "discount": 0,
+    "total": 115
   }
 ]
