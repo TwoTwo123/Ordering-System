@@ -4,6 +4,8 @@ import flet as ft
 from services.cart_service import get_cart, update_qty, remove_item
 from services.pricing import calc_price
 from pathlib import Path
+from services.cart_service import add_item
+from components.recommend_panel import create_recommend_panel
 
 ASSETS_DIR = Path(__file__).resolve().parent.parent / "assets"
 
@@ -53,7 +55,19 @@ def _thumb(item):
 def create_cart_sidebar(page: ft.Page, on_change=None, on_cart_change_callback=None):
     cb = on_change or on_cart_change_callback
 
-    cart_items_column = ft.Column(scroll=ft.ScrollMode.AUTO, expand=True)
+    # horizontal_alignment=CENTER：購物車品項在側邊欄中置中
+    cart_items_column = ft.Column(scroll=ft.ScrollMode.AUTO, expand=True,
+                                  horizontal_alignment=ft.CrossAxisAlignment.CENTER)
+
+    def add_recommended(item):
+        """按下推薦卡片的「＋」：加入購物車並同步更新畫面"""
+        add_item(item)
+        refresh()
+        if cb:
+            cb()
+
+    recommend_panel, refresh_recommend = create_recommend_panel(on_add=add_recommended)
+    recommend_panel.width = 310  # 和購物車其他區塊同寬
     pricing_text = ft.Text(size=13, color="#555555")
     discount_hint_text = ft.Text(size=12, color="#D35400", weight="bold")
     total_price_text = ft.Text("NT$0", size=20, weight="bold", color="#D35400")
@@ -354,7 +368,7 @@ def create_cart_sidebar(page: ft.Page, on_change=None, on_cart_change_callback=N
             build_dining_btn("外帶"),
             build_dining_btn("內用"),
         ], spacing=4)
-
+        refresh_recommend()
         page.update()
 
     def change_qty(line_key, new_qty):
@@ -378,6 +392,7 @@ def create_cart_sidebar(page: ft.Page, on_change=None, on_cart_change_callback=N
         content=ft.Column([
             dining_bar,
             cart_items_column,
+            recommend_panel,
             ft.Divider(height=1, color="#E0E0E0"),
             discount_card,
             ft.Container(
@@ -398,12 +413,12 @@ def create_cart_sidebar(page: ft.Page, on_change=None, on_cart_change_callback=N
                 height=45,
                 width=310
             )
-        ], spacing=12),
+        ], spacing=12, horizontal_alignment=ft.CrossAxisAlignment.CENTER),  # 所有區塊在側邊欄中置中
         width=340,
         padding=15,
         bgcolor="white",
         border=ft.border.only(left=ft.BorderSide(1, "#E0E0E0")),
-        expand=3
+        # 不用 expand：側邊欄固定 340 寬，剩下的空間全部留給左邊的菜單
     )
 
     refresh()

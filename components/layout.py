@@ -14,6 +14,7 @@ def get_appbar(title_text: str, page: ft.Page, show_back: bool = False):
             page.go("/")
 
     user_avatar_menu = ft.PopupMenuButton(
+        menu_position=ft.PopupMenuPosition.UNDER,
         content=ft.Container(
             content=ft.Icon(ft.Icons.PERSON, color="#D35400", size=20),
             bgcolor="white",
@@ -53,7 +54,7 @@ def get_appbar(title_text: str, page: ft.Page, show_back: bool = False):
     return ft.AppBar(
         title=ft.Text(title_text, weight="bold", color="white", size=20),
         bgcolor="#D35400",
-        center_title=False,
+        center_title=True,
         leading=leading_button,
         actions=[
             ft.Container(
