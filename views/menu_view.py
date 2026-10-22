@@ -185,16 +185,16 @@ def menu_view(page: ft.Page):
                             ft.Text(f"NT${item['price']}", size=13, color="#D35400", weight="bold"),
                             stepper,
                         ], spacing=2, expand=True),
-                        padding=ft.padding.only(left=8, right=8, top=6, bottom=4),
+                        padding=ft.padding.only(left=8, right=8, top=6, bottom=8),
                         expand=True,
                     ),
                 ], spacing=0),
-                width=160, height=215, bgcolor="white", border_radius=8,
+                width=160, height=222, bgcolor="white", border_radius=8,
                 on_click=lambda e, i=item: open_item_modal(i)  # 點卡片其他地方仍開啟小視窗（可填備註）
             )
         )
 
-    grid_view = ft.GridView(expand=True, max_extent=180, child_aspect_ratio=0.88, spacing=12, run_spacing=12, padding=12)
+    grid_view = ft.GridView(expand=True, max_extent=180, child_aspect_ratio=0.84, spacing=12, run_spacing=12, padding=12)
 
     def refresh_grid(category):
         nonlocal current_category

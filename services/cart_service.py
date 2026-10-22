@@ -59,3 +59,24 @@ def clear_cart():
     """清空購物車"""
     cart_items.clear()
     return cart_items
+
+def reorder(order):
+    """
+    再點一次：把一筆舊訂單的餐點加回購物車（保留數量與單品備註）
+    價格以「現在的菜單」為準；已下架的品項會略過
+    回傳 (加入的份數, 略過的品名清單)
+    """
+    from services.menu_service import get_item  # 放在函式內，避免循環匯入
+
+    added, skipped = 0, []
+    for entry in order.get("items", []):
+        old_item = entry.get("item", {})
+        item_id = old_item.get("id") if isinstance(old_item, dict) else None
+        current = get_item(item_id) if item_id else None
+        if not current:
+            skipped.append(old_item.get("name", "未知品項") if isinstance(old_item, dict) else "未知品項")
+            continue
+        for _ in range(entry.get("qty", 1)):
+            add_item(current, entry.get("note", ""))
+            added += 1
+    return added, skipped
